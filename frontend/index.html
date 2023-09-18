@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="filter">
+        <form action="#" class="filter__form" id="filter__form">
+            <label class="filter__label"> 
+                <input type="text" class="form__input filter__input" id="filter-name" placeholder="ФИО">
+            </label>
+            <label class="filter__label"> 
+                <input type="text" class="form__input filter__input" id="filter-faculty" placeholder="Факультет">
+            </label>
+            <label class="filter__label"> 
+                <input type="text" class="form__input filter__input" id="filter-age" placeholder="Дата рождения">
+            </label>
+            <label class="filter__label"> 
+                <input type="text" class="form__input filter__input" id="filter-year" placeholder="Год обучения">
+            </label>
+        </form>
+    </div>
+</div>
+<div class="popup hidden" id="popup">
+    <h2 class="popup__title">Добавление студента</h2>
+    <form action="#" class="form" id="form">
+        <div class="form__wrapper">
+            <div class="form__left">
+                <label class="form__label"> Имя
+                    <input type="text" class="form__input" id="name" placeholder="Иван">
+                </label>
+                <label class="form__label"> Фамилия
+                    <input type="text" class="form__input" id="surmane" placeholder="Иванов">
+                </label>
+                <label class="form__label"> Отчество
+                    <input type="text" class="form__input" id="family-name" placeholder="Иванович">
+                </label>
+            </div>
+            <div class="form__right">
+                <label class="form__label"> Дата рождения
+                    <input type="date" class="form__input" id="birth" placeholder="Дата рождения">
+                </label>
+                <label class="form__label"> Год начала обучения
+                    <input type="number" class="form__input" id="year" placeholder="2004">
+                </label>
+                <label class="form__label"> Факультет
+                    <input type="text" class="form__input" id="faculty" placeholder="Физика">
+                </label>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button class="btn btn__back" id="btn__back">Отменить</button>
+        <button class="btn btn__accept" id="btn__accept">Добавить</button>
+        </div>
+    </form>
+</div>
+<script defer src="main.js"></script>
+</body>
+
+</html>
